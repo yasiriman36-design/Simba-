@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand: #FFD700; /* Gold/Yellow for Simba */
+  --color-dark: #0A0A0A;
+  --color-accent: #FF4D00; /* Bold orange/red */
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3 {
+    @apply font-display font-bold tracking-tighter;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@700&display=swap');
